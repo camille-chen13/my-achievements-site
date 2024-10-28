@@ -6,7 +6,7 @@ body {
     padding: 0;
     line-height: 1.6;
     position: relative; /* 設置相對定位，用於背景表情符號 */
-    overflow: hidden;
+   /* overflow: hidden;*/
 }
 
 /* 背景鬼臉表情符號樣式 */
