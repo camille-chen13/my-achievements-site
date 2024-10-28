@@ -1,17 +1,41 @@
-/* 全局樣式 */
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    color: #D3D3D3; /* 淺灰色文字 */
-    background-color: #1B1B1B; /* 深黑背景 */
+    color: #D3D3D3;
+    background-color: #1B1B1B;
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    position: relative; 
+    overflow: hidden;
 }
 
-/* 頁首和頁尾樣式 */
+body::before {
+    content: "👻 👻 👻 👻 👻 👻 👻 👻 👻 👻";
+    font-size: 5em;
+    opacity: 0.05; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    line-height: 1.5;
+    overflow: hidden;
+}
+
+body::after {
+    content: "👻 👻 👻 👻 👻 👻 👻 👻 👻 👻";
+    font-size: 5em;
+    opacity: 0.05;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    transform: rotate(15deg);
+    white-space: nowrap;
+}
+
 header, footer {
-    background-color: #2C2C2C; /* 深灰色背景 */
-    color: #D3D3D3; /* 淺灰文字 */
+    background-color: #2C2C2C;
+    color: #D3D3D3;
     padding: 20px 0;
     text-align: center;
 }
@@ -19,11 +43,7 @@ header, footer {
 header h1, footer p {
     margin: 0;
     font-weight: 300;
-    color: #E53935; /* 紅色點綴 */
-}
-
-nav {
-    margin-top: 10px;
+    color: #E53935;
 }
 
 nav a {
@@ -37,114 +57,25 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #E53935; /* 紅色背景 */
-    color: #FFFFFF; /* 白色文字 */
+    background-color: #E53935;
+    color: #FFFFFF;
 }
 
-/* 主體內容樣式 */
 main {
     max-width: 800px;
     margin: 30px auto;
     padding: 20px;
-    background-color: #2C2C2C; /* 深灰色背景 */
-    color: #D3D3D3; /* 淺灰色文字 */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* 輕微陰影 */
-    border-radius: 10px; /* 圓角 */
+    background-color: #2C2C2C;
+    color: #D3D3D3;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
 }
 
-/* 標題樣式 */
 h1 {
     font-size: 2.5em;
-    color: #E53935; /* 紅色標題 */
+    color: #E53935;
     font-weight: 300;
     margin-bottom: 20px;
-}
-
-h2 {
-    font-size: 1.8em;
-    color: #D3D3D3; /* 次標題的淺灰色 */
-    margin-top: 20px;
-    margin-bottom: 15px;
-}
-
-h3 {
-    font-size: 1.5em;
-    color: #E53935; /* 小標題紅色 */
-    margin-top: 15px;
-    margin-bottom: 10px;
-}
-
-/* 段落和圖片樣式 */
-p {
-    line-height: 1.8;
-    margin-bottom: 15px;
-    color: #B0B0B0; /* 更淺的灰色，用於段落文字 */
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-}
-
-/* 按鈕樣式 */
-button {
-    background-color: #E53935; /* 紅色按鈕背景 */
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1em;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #D32F2F; /* 深一點的紅色 */
-}
-
-/* 表格樣式 */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-}
-
-table, th, td {
-    border: 1px solid #444; /* 更深的灰色邊框 */
-}
-
-th, td {
-    padding: 12px;
-    text-align: left;
-}
-
-th {
-    background-color: #E53935; /* 紅色表頭背景 */
-    color: #FFFFFF; /* 白色文字 */
-}
-
-td {
-    background-color: #2C2C2C; /* 深灰色背景 */
-}
-
-/* 回到頂部按鈕 */
-.top-button {
-    display: inline-block;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #E53935;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 50%;
-    text-decoration: none;
-    font-size: 1.5em;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transition: background-color 0.3s ease;
 }
 
 .top-button:hover {
