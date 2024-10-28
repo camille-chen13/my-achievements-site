@@ -1,3 +1,6 @@
+html, body {
+    overflow-y: auto;
+}
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     color: #D3D3D3;
