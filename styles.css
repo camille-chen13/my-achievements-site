@@ -1,21 +1,24 @@
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     color: #D3D3D3;
-    background-color: #1B1B1B;
+    background-color: #1B1B1B; /* 深黑背景 */
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    position: relative; 
+    position: relative; /* 設置相對定位，用於背景表情符號 */
     overflow: hidden;
 }
 
+/* 背景鬼臉表情符號樣式 */
 .emoji-ghost {
     font-size: 3em;
     position: absolute;
-    opacity: 0.08; /* 淡化表情符號，避免干擾閱讀 */
+    opacity: 0.1; /* 稍微提高透明度，使表情符號更明顯 */
     user-select: none; /* 防止選取 */
     pointer-events: none; /* 防止影響頁面交互 */
 }
+
+/* 隨機分佈鬼臉表情符號 */
 .emoji-ghost:nth-child(1) { top: 10%; left: 15%; transform: rotate(45deg); }
 .emoji-ghost:nth-child(2) { top: 30%; left: 70%; transform: rotate(-45deg); }
 .emoji-ghost:nth-child(3) { top: 50%; left: 30%; transform: rotate(180deg); }
@@ -47,7 +50,7 @@ nav a {
     font-weight: bold;
     padding: 8px 12px;
     border-radius: 4px;
-    transition: color 0.3s ease, background-color 0.3s ease;
+    transition: color 0.5s ease, background-color 0.5s ease; /* 延長過渡效果 */
 }
 
 nav a:hover {
@@ -72,6 +75,23 @@ h1 {
     margin-bottom: 20px;
 }
 
-.top-button:hover {
-    background-color: #D32F2F;
+/* 調整後的段落與標題樣式 */
+h2 {
+    font-size: 1.8em;
+    color: #D3D3D3;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #E53935;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: #B0B0B0;
 }
