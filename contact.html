@@ -5,20 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* 表單樣式 */
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #2C2C2C; /* 深灰背景 */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        label {
+            display: block;
+            margin-top: 15px;
+            color: #D3D3D3;
+            font-weight: bold;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #777;
+            border-radius: 4px;
+            background-color: #1B1B1B;
+            color: #D3D3D3;
+            font-size: 1em;
+        }
+        
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            background-color: #E53935;
+            color: #FFF;
+            font-size: 1em;
+            font-weight: bold;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: #D32F2F;
+        }
+    </style>
 </head>
 <body>
-    <!-- 背景鬼臉表情符號 -->
-    <span class="emoji-ghost">👻</span>
-    <span class="emoji-ghost">👻</span>
-    <span class="emoji-ghost">👻</span>
-    <span class="emoji-ghost">👻</span>
-    <span class="emoji-ghost">👻</span>
-    <span class="emoji-ghost">👻</span>
-    <span class="emoji-ghost">👻</span>
-    <span class="emoji-ghost">👻</span>
-    <span class="emoji-ghost">👻</span>
-    <span class="emoji-ghost">👻</span>
-
     <header>
         <h1><strong>學習成就與經歷</strong></h1>
         <nav>
@@ -33,6 +70,7 @@
         <h2>聯絡我</h2>
         <p>歡迎透過電子郵件聯絡我，討論有關數據分析或程式設計的問題，或填寫下方的聯絡表單留言。</p>
         
+        <!-- 聯絡表單 -->
         <form action="https://example.com/contact" method="post">
             <label for="name">姓名：</label>
             <input type="text" id="name" name="name" required>
